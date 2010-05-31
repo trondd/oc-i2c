@@ -319,7 +319,7 @@ begin
                           (fSCL(1) and fSCL(0));
                   sSDA <= (fSDA(2) and fSDA(1)) or
                           (fSDA(2) and fSDA(0)) or
-                          (fSCL(1) and fSCL(0));
+                          (fSDA(1) and fSDA(0));
 
                   dSCL <= sSCL;
                   dSDA <= sSDA;
