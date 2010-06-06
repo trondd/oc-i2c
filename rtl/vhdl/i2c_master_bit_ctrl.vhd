@@ -273,7 +273,9 @@ begin
             if (nReset = '0') then
                 filter_cnt <= (others => '0');
             elsif (clk'event and clk = '1') then
-                if ((rst = '1') or (filter_cnt = 0)) then
+                if ( (rst = '1') or (ena = '0') ) then
+                    filter_cnt <= (others => '0');
+                elsif (filter_cnt = 0) then
                     filter_cnt <= clk_cnt(15 downto 2);
                 else
                     filter_cnt <= filter_cnt -1;
