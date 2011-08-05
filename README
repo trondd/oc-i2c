@@ -1,0 +1,59 @@
+h1. Description
+
+I2C is a two-wire, bidirectional serial bus that provides a simple, efficient
+method of data exchange between devices. It is primarily used in the consumer
+and telecom market sector and as a board level communications protocol. The
+OpenCores I2C Master Core provides an interface between a Wishbone Master and
+an I2C bus. It is an easy path to add I2C capabilities to any Wishbone
+compatible system. You can find the I2C specifications on Phillips web Site.
+Work was originally started by Frédéric Renet. You can find his webpage here.
+
+
+h1. Features
+
+* Compatible with Philips I2C bus standard 
+* Multi-Master Operation 
+* Software programmable timing 
+* Clock stretching and wait state generation 
+* Interrupt or bit-polling driven byte-by-byte data-transfers 
+* Arbitration lost interrupt, with automatic transfer cancelation 
+* (Repeated)Start/Stop signal generation/detection 
+* Bus busy detection 
+* Supports 7 and 10bit addressing 
+* Fully static and synchronous design 
+* Fully synthesisable
+
+
+h1. Documentation
+
+* Revision 0.8 of the WISHBONE I2C Master Core specifications are available here. - Also see the FAQ page.
+
+
+h1. Licensing
+
+Check the FAQ page for information regarding Philips I2C/SMBus licensing information.
+
+
+h1. Status
+
+* Design is available in VHDL and Verilog from OpenCores SVN via this link
+
+
+h1. Synthesis results
+
+Push-button synthesis results for various targets. 
+
+Actel: 
+* A54SX16ATQ100-std: 352Modules@58MHz 
+
+Altera: 
+* FLEX: EPF10K50ETC144-3: 294LCELLs@82MHz 
+* ACEX: EPF20K30ETC144-3: 257ATOMs@74MHz 
+
+Xilinx: 
+* Spartan-II: 2S15CS144-5: 229LUTs@82MHz 
+* Virtex-E: XCV50ECS144-8: 230LUTs@118MHz
+
+Users
+
+- CATC "Computer Access Technology Corporation is a user and supporter of the OpenCores I2C Soft IP Core"
